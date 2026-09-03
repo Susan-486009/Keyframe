@@ -1,0 +1,140 @@
+/* KEYFRAME POD — Pod Team Page Stylesheet. Owned by Seat 09.
+   Strictly uses brand.css tokens. Highlights team roles and collaboration. */
+
+.pod-hero {
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+  padding: var(--s5) 0;
+}
+
+.pod-hero h1 {
+  font-size: 36px;
+  margin: var(--s1) 0 var(--s2) 0;
+  max-width: 820px;
+}
+
+.pod-lead {
+  font-size: 17px;
+  color: var(--ink);
+  max-width: 800px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Roster Section */
+.roster-section {
+  padding: var(--s5) 0;
+}
+
+.roster-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--s3);
+  margin-top: var(--s3);
+}
+
+.seat-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: var(--s3);
+  display: flex;
+  flex-direction: column;
+}
+
+.highlight-card {
+  border-color: var(--brand);
+  background: var(--brand-surface);
+}
+
+.seat-badge {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--brand);
+  background: var(--brand-surface);
+  border: 1px solid rgba(27, 77, 62, 0.2);
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  display: inline-block;
+  align-self: flex-start;
+  margin-bottom: var(--s1);
+}
+
+.badge-prime {
+  background: var(--brand);
+  color: var(--surface);
+}
+
+.seat-card h3 {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.duty-tag {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: var(--s2);
+}
+
+.seat-card p {
+  font-size: 14px;
+  color: var(--muted);
+  flex-grow: 1;
+  margin-bottom: var(--s2);
+  line-height: 1.5;
+}
+
+.seat-link {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--brand);
+}
+
+/* Rules Held Section */
+.rules-section {
+  padding-bottom: var(--s6);
+}
+
+.rules-box {
+  background: var(--brand-dark);
+  color: var(--surface);
+  border-radius: var(--radius);
+  padding: var(--s4);
+}
+
+.rules-box h3 {
+  color: var(--surface);
+  font-size: 22px;
+  margin-bottom: var(--s2);
+}
+
+.rules-list {
+  padding-left: var(--s3);
+  margin: 0;
+}
+
+.rules-list li {
+  font-size: 15px;
+  color: #D2DDD5;
+  margin-bottom: var(--s2);
+  line-height: 1.5;
+}
+
+.rules-list strong {
+  color: var(--surface);
+}
+
+@media (max-width: 900px) {
+  .roster-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .roster-grid {
+    grid-template-columns: 1fr;
+  }
+}
