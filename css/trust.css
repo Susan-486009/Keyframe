@@ -1,0 +1,193 @@
+/* KEYFRAME POD — Trust and Verification Stylesheet. Owned by Seat 06.
+   Strictly uses brand.css tokens. Focused on psychological safety & accessibility. */
+
+.trust-hero {
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+  padding: var(--s5) 0;
+}
+
+.eyebrow-alert {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--accent);
+  background: var(--accent-soft);
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--s2);
+}
+
+.trust-hero h1 {
+  font-size: 36px;
+  margin-bottom: var(--s2);
+  max-width: 860px;
+}
+
+.hero-desc {
+  font-size: 17px;
+  color: var(--ink);
+  max-width: 820px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* 3 Facts Grid */
+.facts-section {
+  padding: var(--s5) 0;
+}
+
+.facts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--s3);
+}
+
+.fact-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: var(--s3);
+  display: flex;
+  flex-direction: column;
+}
+
+.fact-icon {
+  font-family: var(--display);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--brand);
+  margin-bottom: var(--s1);
+}
+
+.fact-card h3 {
+  font-size: 20px;
+  margin-bottom: var(--s1);
+}
+
+.fact-card p {
+  font-size: 15px;
+  color: var(--muted);
+  margin: 0;
+}
+
+/* Script Section */
+.script-section {
+  padding-bottom: var(--s5);
+}
+
+.script-box {
+  background: var(--brand-dark);
+  color: var(--surface);
+  border-radius: var(--radius);
+  padding: var(--s4);
+}
+
+.script-tag {
+  color: #FFB38A;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.script-header h2 {
+  color: var(--surface);
+  font-size: 24px;
+  margin: 6px 0 var(--s1) 0;
+}
+
+.script-header p {
+  color: #D2DDD5;
+  font-size: 15px;
+  margin-bottom: var(--s3);
+}
+
+.script-quote {
+  background: rgba(255, 255, 255, 0.08);
+  border-left: 4px solid var(--accent);
+  padding: var(--s3);
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--s3);
+}
+
+.script-quote p {
+  font-size: 18px;
+  font-style: italic;
+  color: var(--surface);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.script-footer {
+  font-size: 14px;
+  color: #B9C6BD;
+}
+
+.script-footer strong {
+  color: var(--surface);
+}
+
+/* Guidelines Table */
+.guidelines-section {
+  padding-bottom: var(--s6);
+}
+
+.table-container {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-top: var(--s3);
+}
+
+.guide-table {
+  width: 100%;
+}
+
+.g-head {
+  display: grid;
+  grid-template-columns: 200px 180px 1fr;
+  background: var(--brand-surface);
+  padding: var(--s2);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--brand-dark);
+  border-bottom: 1px solid var(--line);
+}
+
+.g-row {
+  display: grid;
+  grid-template-columns: 200px 180px 1fr;
+  padding: var(--s2);
+  border-bottom: 1px solid var(--line);
+  font-size: 14px;
+  align-items: center;
+}
+
+.g-row:last-child {
+  border-bottom: none;
+}
+
+.g-col strong {
+  color: var(--brand-dark);
+}
+
+.source-note {
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: var(--s2);
+}
+
+@media (max-width: 800px) {
+  .facts-grid {
+    grid-template-columns: 1fr;
+  }
+  .g-head, .g-row {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+}
