@@ -1,0 +1,345 @@
+/* KEYFRAME POD — Landing Page Stylesheet. Owned by Seat 01.
+   Strictly uses tokens from brand.css. Zero gradients, zero arbitrary values. */
+
+.hero-section {
+  padding: var(--s5) 0 var(--s4) 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: var(--s4);
+  align-items: start;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--brand);
+  background: var(--brand-surface);
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--s2);
+}
+
+.hero-text h1 {
+  font-size: 38px;
+  margin-bottom: var(--s2);
+  color: var(--brand-dark);
+}
+
+.hero-lead {
+  font-size: 18px;
+  color: var(--ink);
+  line-height: 1.55;
+  margin-bottom: var(--s3);
+}
+
+.hero-actions {
+  display: flex;
+  gap: var(--s2);
+  flex-wrap: wrap;
+  margin-bottom: var(--s2);
+}
+
+.btn-primary {
+  background-color: var(--brand);
+  color: var(--surface);
+  font-weight: 600;
+  font-size: 15px;
+  padding: 12px 22px;
+  border-radius: var(--radius);
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid var(--brand);
+}
+
+.btn-primary:hover {
+  background-color: var(--brand-dark);
+  color: var(--surface);
+}
+
+.btn-secondary {
+  background-color: var(--surface);
+  color: var(--brand-dark);
+  font-weight: 600;
+  font-size: 15px;
+  padding: 12px 22px;
+  border-radius: var(--radius);
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid var(--line);
+}
+
+.btn-secondary:hover {
+  background-color: var(--brand-surface);
+  border-color: var(--brand);
+}
+
+.hero-note {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 0;
+}
+
+/* 10-Second Quick Finder Card */
+.quick-finder-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: var(--s3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.card-header {
+  border-bottom: 1px solid var(--line);
+  padding-bottom: var(--s2);
+  margin-bottom: var(--s2);
+}
+
+.card-tag {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--accent);
+  letter-spacing: 0.5px;
+}
+
+.card-header h3 {
+  font-size: 20px;
+  margin-top: 4px;
+}
+
+.finder-hint {
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: var(--s1);
+}
+
+.age-selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s1);
+  margin-bottom: var(--s3);
+}
+
+.age-pill {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.age-pill:hover {
+  border-color: var(--brand);
+  background: var(--brand-surface);
+}
+
+.age-pill.active-pill {
+  background: var(--brand);
+  color: var(--surface);
+  border-color: var(--brand);
+}
+
+.milestone-preview-box {
+  background: var(--brand-surface);
+  border-left: 4px solid var(--accent);
+  padding: var(--s2);
+  border-radius: var(--radius-sm);
+}
+
+.preview-badge {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.milestone-preview-box h4 {
+  font-size: 17px;
+  margin-bottom: 6px;
+}
+
+.preview-desc {
+  font-size: 14px;
+  color: var(--ink);
+  margin-bottom: var(--s2);
+}
+
+.preview-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: var(--muted);
+  border-top: 1px solid rgba(27, 77, 62, 0.15);
+  padding-top: var(--s1);
+  margin-bottom: var(--s1);
+}
+
+.preview-link {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--brand);
+}
+
+/* Reality Banner (Missed Date Guidance) */
+.reality-banner {
+  background-color: var(--accent-soft);
+  border-top: 1px solid #EAD8CC;
+  border-bottom: 1px solid #EAD8CC;
+  padding: var(--s4) 0;
+}
+
+.reality-content {
+  max-width: 800px;
+}
+
+.reality-pill {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--accent);
+  background: #F8E3D2;
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--s1);
+}
+
+.reality-content h2 {
+  font-size: 24px;
+  color: #7B3206;
+  margin-bottom: var(--s1);
+}
+
+.reality-content p {
+  color: #4A3022;
+  margin-bottom: var(--s2);
+}
+
+.link-forward {
+  font-weight: 700;
+  color: var(--accent);
+}
+
+/* Duties Section */
+.duties-section {
+  padding: var(--s5) 0;
+}
+
+.section-title {
+  margin-bottom: var(--s4);
+}
+
+.section-title h2 {
+  font-size: 28px;
+}
+
+.duties-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--s3);
+}
+
+.duty-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: var(--s3);
+  display: flex;
+  flex-direction: column;
+}
+
+.duty-num {
+  font-family: var(--display);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--brand);
+  margin-bottom: var(--s1);
+}
+
+.duty-card h3 {
+  font-size: 18px;
+  margin-bottom: var(--s1);
+}
+
+.duty-card p {
+  font-size: 14px;
+  color: var(--muted);
+  flex-grow: 1;
+  margin-bottom: var(--s2);
+}
+
+.card-link {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--brand);
+}
+
+/* Gap Warning Section */
+.gap-warning-section {
+  padding-bottom: var(--s5);
+}
+
+.gap-box {
+  background: var(--brand-dark);
+  color: var(--surface);
+  padding: var(--s4);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s3);
+}
+
+.gap-tag {
+  color: #FFB38A;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.gap-box h3 {
+  color: var(--surface);
+  font-size: 22px;
+  margin: 6px 0 var(--s1) 0;
+}
+
+.gap-box p {
+  color: #D2DDD5;
+  margin: 0;
+  max-width: 650px;
+  font-size: 15px;
+}
+
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+  .duties-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .gap-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .duties-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero-text h1 {
+    font-size: 28px;
+  }
+}
